@@ -24,5 +24,8 @@ iron:router
 aldeed:autoform
 aldeed:collection2
 twbs:bootstrap
-accounts-ui
 aldeed:delete-button
+ian:accounts-ui-bootstrap-3
+momentjs:moment
+npm-bcrypt
+accounts-password
