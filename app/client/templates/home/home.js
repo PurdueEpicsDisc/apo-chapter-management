@@ -21,3 +21,5 @@ Template.Home.onRendered(function () {
 
 Template.Home.onDestroyed(function () {
 });
+
+
