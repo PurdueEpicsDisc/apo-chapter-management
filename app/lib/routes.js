@@ -40,3 +40,8 @@ Router.route('/LFS_Program', {
   controller: 'LFSController',
   where: 'client'
 });
+
+Router.route('/about', {
+  name: 'about',
+  where: 'client'
+});
