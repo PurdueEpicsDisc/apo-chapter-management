@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* Rush: Event Handlers */
+/* Events: Event Handlers */
 /*****************************************************************************/
-Template.Rush.events({
+Template.Events.events({
 });
 
 /*****************************************************************************/
-/* Rush: Helpers */
+/* Events: Helpers */
 /*****************************************************************************/
-Template.Rush.helpers({
+Template.Events.helpers({
 });
 
 /*****************************************************************************/
-/* Rush: Lifecycle Hooks */
+/* Events: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Rush.onCreated(function () {
+Template.Events.onCreated(function () {
 });
 
-Template.Rush.onRendered(function () {
+Template.Events.onRendered(function () {
 });
 
-Template.Rush.onDestroyed(function () {
+Template.Events.onDestroyed(function () {
 });

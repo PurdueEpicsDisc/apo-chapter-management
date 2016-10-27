@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* Rush: Event Handlers */
+/* Gallery: Event Handlers */
 /*****************************************************************************/
-Template.Rush.events({
+Template.Gallery.events({
 });
 
 /*****************************************************************************/
-/* Rush: Helpers */
+/* Gallery: Helpers */
 /*****************************************************************************/
-Template.Rush.helpers({
+Template.Gallery.helpers({
 });
 
 /*****************************************************************************/
-/* Rush: Lifecycle Hooks */
+/* Gallery: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Rush.onCreated(function () {
+Template.Gallery.onCreated(function () {
 });
 
-Template.Rush.onRendered(function () {
+Template.Gallery.onRendered(function () {
 });
 
-Template.Rush.onDestroyed(function () {
+Template.Gallery.onDestroyed(function () {
 });

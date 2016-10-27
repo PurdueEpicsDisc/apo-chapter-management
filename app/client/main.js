@@ -1,0 +1,9 @@
+
+
+    AdminConfig = {
+      collections: {
+        Events: {}
+      }
+    };
+    
+

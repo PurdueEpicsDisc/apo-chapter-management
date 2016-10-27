@@ -22,3 +22,21 @@ Router.route('/rush', {
   controller: 'RushController',
   where: 'client'
 });
+
+Router.route('/events', {
+  name: 'events',
+  controller: 'EventsController',
+  where: 'client'
+});
+
+Router.route('/gallery', {
+  name: 'gallery',
+  controller: 'GalleryController',
+  where: 'client'
+});
+
+Router.route('/LFS_Program', {
+  name: 'lfs',
+  controller: 'LFSController',
+  where: 'client'
+});
