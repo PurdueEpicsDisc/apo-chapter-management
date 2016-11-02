@@ -32,10 +32,7 @@ accounts-password
 stylus
 
 ###yogiben admin
-yogiben:admin
-dburles:collection-helpers
-accounts-base
-alanning:roles
+
 fortawesome:fontawesome
 check
 
