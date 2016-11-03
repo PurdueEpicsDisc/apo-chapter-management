@@ -45,3 +45,8 @@ Router.route('/about', {
   name: 'about',
   where: 'client'
 });
+
+Router.route('/profile', {
+  name: 'profile',
+  where: 'client'
+});
