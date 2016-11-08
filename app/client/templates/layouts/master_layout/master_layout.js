@@ -5,3 +5,24 @@ Template.MasterLayout.events({
 });
 
 
+
+    
+    
+Template.MasterLayout.onRendered(function () {
+    
+    jQuery(document).ready(function($) {
+ 
+        $(".scroll a, .navbar-brand").click(function(event){   
+            //event.preventDefault();
+            $(".scroll li").removeClass('active');
+            $(this).parents('li').toggleClass('active');
+            });
+        });
+        
+    $(".gototop").click(function(event){   
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600,'swing');
+        
+    });
+    
+});
