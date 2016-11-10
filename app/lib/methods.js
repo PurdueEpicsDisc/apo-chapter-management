@@ -11,5 +11,8 @@ Meteor.methods({
     //   return;
     }
     // server method logic
-  }
+  },
+  createUserFromAdmin: function(email,password,username) {
+    Accounts.createUser({username: username, email: email, password: password});
+  } 
 });

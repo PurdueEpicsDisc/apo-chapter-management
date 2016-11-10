@@ -1,0 +1,39 @@
+<template name="EventsList">
+  <div class = "events-list">
+  <h1>Events List</h1>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Edit/Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each events}}
+      <tr>
+        <td>{{name}}</td>
+        <td>{{location}}</td>
+        <td>{{startDateFormatted}}</td>
+        <td>{{endDateFormatted}}</td>
+        <td>
+          {{#linkTo route='editEvent'}}
+          <a class="btn btn-primary" aria-label="Update">
+            <i class="fa fa-pencil-square-o"></i>
+          </a>
+          {{/linkTo}}
+          {{#quickRemoveButton collection="Events" _id=this._id beforeRemove=beforeRemove class="btn btn-danger"}}
+            <i class = "fa fa-trash-o"></i>
+          {{/quickRemoveButton}}
+        </td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table>
+  {{#linkTo route='insertEvent'}}
+    <button type="button" class="btn btn-success">Add Event</button>
+  {{/linkTo}}
+</div>
+</template>

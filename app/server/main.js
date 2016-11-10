@@ -5,12 +5,12 @@ Meteor.startup(() => {
 });
 
 
-if (Meteor.isServer) {
+// if (Meteor.isServer) {
     
-    AdminConfig = {
-      collections: {
-        Events: {}
-      }
-};
+//     AdminConfig = {
+//       collections: {
+//         Events: {}
+//       }
+// };
     
-}
+// }
