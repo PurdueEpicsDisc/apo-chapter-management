@@ -1,4 +1,5 @@
 <template name="InsertProfile">
+	{{> AdminAccess}}
 	<div class="insertprofile">
   <h1>Create New Profile</h1>
   {{> quickForm collection="Buffers" id="insertProfile" type="insert" omitFields="createdBy,userId"

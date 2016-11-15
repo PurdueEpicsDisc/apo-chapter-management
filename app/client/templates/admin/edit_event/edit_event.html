@@ -1,4 +1,5 @@
 <template name="EditEvent">
+	{{> AdminAccess}}
 	<div class = "edit-event">
   <h1>Edit Event</h1>
   {{> quickForm collection="Events" doc=this id="editEventForm" type="update" omitFields="createdBy" buttonContent="Update"}}

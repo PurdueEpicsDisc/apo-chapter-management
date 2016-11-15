@@ -15,12 +15,22 @@ Events.attachSchema(new SimpleSchema({
   {
     type: Date,
     label: "Start Date",
+    autoform: {
+      afFieldInput: {
+        type: "bootstrap-datetimepicker"
+      }
+    },
     optional: true
   },
   endDate:
   {
     type: Date,
     label: "End Date",
+    autoform: {
+      afFieldInput: {
+        type: "bootstrap-datetimepicker"
+      }
+    },
     optional: true
   },
   createdBy: {
