@@ -1,4 +1,5 @@
 <template name="InsertEvent">
+	{{> AdminAccess}}
 	<div class = "insert-event">
   <h1>Create New Event</h1>
   {{> quickForm collection="Events" id="insertEvent" type="insert" omitFields="createdBy"

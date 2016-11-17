@@ -1,0 +1,13 @@
+<template name="AdminAccess">
+  <div class="adminA">
+    {{#linkTo route='eventsList'}}
+      <button type="button" class="btn btn-info">Events</button>
+    {{/linkTo}}
+    {{#linkTo route='usersList'}}
+      <button type="button" class="btn btn-info">Users</button>
+    {{/linkTo}}
+    {{#linkTo route='profilesList'}}
+      <button type="button" class="btn btn-info">Profiles</button>
+    {{/linkTo}}
+  </div>
+</template>

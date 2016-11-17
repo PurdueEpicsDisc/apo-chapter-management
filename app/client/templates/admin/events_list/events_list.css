@@ -1,7 +1,7 @@
 /*****************************************************************************/
-/* InsertEvent: Style */
+/* EventsList: Style */
 /*****************************************************************************/
-.insert-event {
-	padding-top: 5cm;
+.events-list {
+	padding-top: 1cm;
 	padding-bottom: 5cm;
 }

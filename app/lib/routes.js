@@ -102,6 +102,13 @@ Router.route('/profile/:_id', {
   where: 'client'
 });
 
+
+Router.route('/admin_access', {
+  name: 'adminAccess',
+  controller: 'AdminController',
+  where: 'client'
+});
+
 Router.onBeforeAction(function() {
   if (!Meteor.user()) {
     this.render('AccessDenied');

@@ -1,4 +1,4 @@
-HomeController = RouteController.extend({
+AdminController = RouteController.extend({
   
   // A place to put your subscriptions
   // this.subscribe('items');
@@ -46,7 +46,7 @@ HomeController = RouteController.extend({
   //  action: 'myActionFunction'
   
   action: function () {
-    this.render('Home');
+    this.render();
   },
   onAfterAction: function () {
   },

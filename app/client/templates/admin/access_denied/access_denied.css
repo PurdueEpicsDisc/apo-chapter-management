@@ -1,7 +1,7 @@
 /*****************************************************************************/
-/* EventsList: Style */
+/* AccessDenied: Style */
 /*****************************************************************************/
-.events-list {
-	padding-top: 5cm;
+.access-denied {
+	padding-top: 1cm;
 	padding-bottom: 5cm;
 }
