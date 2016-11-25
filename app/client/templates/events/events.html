@@ -1,5 +1,57 @@
 <template name="Events">
-  <div class="events">
-    <h1>Find me in app/client/templates/events/events</h1>
+<div class="events">
+
+
+{{#if Template.subscriptionsReady}}
+ 
+<div class="row">
+  
+{{#each events}}
+<div class="col-sm-4">
+  <div class="card card-outline-primary">
+    <div class="card-block">
+       <h4 class="card-title">{{name}}</h4>
+       <h6 class="card-subtitle text-muted">Small subtitle</h6>
+    </div>
+    
+    
+    <img src="images/island.jpg" 
+    alt="Card image"
+    style="width:100%">
+    
+    
+    
+    <div class="card-block">
+      <p class="card-text">Location: {{location}}</p>
+      <p class="card-text">Start: {{startDateFormatted}}</p>
+      <p class="card-text">End: {{endDateFormatted}}</p>
+      
+      
+      <a class="btn btn-primary" aria-label="Update">
+        <i class="fa fa-pencil-square-o"></i>Register
+      </a>
+    </div>
+  
+  
   </div>
+  
+</div>
+{{/each}}  
+
+</div>
+    
+{{else}}
+
+<div class="loader"></div>
+{{/if}}
+    
+          
+      
+    
+   
+  
+  
+  
+  
+</div>
 </template>
