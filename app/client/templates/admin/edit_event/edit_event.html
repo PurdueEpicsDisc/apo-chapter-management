@@ -2,7 +2,16 @@
 	{{> AdminAccess}}
 	<div class = "edit-event">
   <h1>Edit Event</h1>
-  {{> quickForm collection="Events" doc=this id="editEventForm" type="update" omitFields="createdBy" buttonContent="Update"}}
+  <!-- {{> quickForm collection="Events" doc=this id="editEventForm" type="update" omitFields="createdBy,shifts" buttonContent="Update" }} -->
+  {{#autoForm collection="Events" doc=this id="editEventForm" type="update"}}
+  	<fieldset>
+  		{{> afQuickField name='name'}}
+	  	{{> afQuickField name='location'}}
+	  	{{> afQuickField name='startDate'}}
+	  	{{> afQuickField name='endDate'}}
+  	</fieldset>
+  	<button type="submit" class="btn btn-primary">Update</button>
+  {{/autoForm}}
   <hr>
   	{{> quickRemoveButton collection="Events" _id=this._id beforeRemove=beforeRemove class="btn btn-danger"}}
   </div>

@@ -1,5 +1,6 @@
 Events = new Mongo.Collection('events');
 
+
 Events.attachSchema(new SimpleSchema({
   name:{
     type: String,
@@ -33,6 +34,36 @@ Events.attachSchema(new SimpleSchema({
     },
     optional: true
   },
+  shifts: {
+    type: Array,
+    label: "Shifts",
+    optional: true
+  },
+  'shifts.$': {
+    type: Object,
+    optional: true
+  },
+  'shifts.$.startDate': {
+    type: Date,
+    label: "Start Date",
+    autoform: {
+      afFieldInput: {
+        type: "bootstrap-datetimepicker"
+      }
+    },
+    optional: true
+  },
+  'shifts.$.endDate': {
+    type: Date,
+    label: "End Date",
+    autoform: {
+      afFieldInput: {
+        type: "bootstrap-datetimepicker"
+      }
+    },
+    optional: true
+  },
+
   createdBy: {
     type: String,
     autoValue: function() {

@@ -21,7 +21,7 @@ shell-server@0.2.1            # Server-side component of the `meteor shell` comm
 iron:router
 twbs:bootstrap
 aldeed:collection2
-aldeed:autoform
+aldeed:autoform@5.0.0
 aldeed:delete-button
 ian:accounts-ui-bootstrap-3
 momentjs:moment
@@ -46,3 +46,4 @@ meteortoys:allthings
 
 tsega:bootstrap3-datetimepicker@=3.1.3_3
 aldeed:autoform-bs-datetimepicker
+jplack:bootstrap-timepicker
