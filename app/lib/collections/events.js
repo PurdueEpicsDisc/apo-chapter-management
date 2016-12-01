@@ -1,5 +1,17 @@
 Events = new Mongo.Collection('events');
 
+Participant = new Mongo.Collection('participant');
+
+Participant.attachSchema(new SimpleSchema({
+  
+  id : {
+    type: String,
+    label: "Participant ID",
+    optional: false
+  }
+  
+  
+}));
 
 Events.attachSchema(new SimpleSchema({
   name:{
@@ -12,6 +24,11 @@ Events.attachSchema(new SimpleSchema({
     label: "Location",
     max: 1024
   },
+  participants: {
+    
+    type: [Participant]
+  },
+  
   startDate:
   {
     type: Date,
@@ -68,7 +85,9 @@ Events.attachSchema(new SimpleSchema({
     type: String,
     autoValue: function() {
     return this.userId
-  }
+  },
+  
+  
 }}));
 
 

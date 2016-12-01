@@ -9,4 +9,9 @@ position:relative;
 .section{
   background-color: gray;
 }
+h3 {
+	font-size: 20px;
+	margin: 5px 0px 5px 0px;
+
+} 
 
