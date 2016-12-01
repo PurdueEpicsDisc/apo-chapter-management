@@ -27,8 +27,8 @@ ian:accounts-ui-bootstrap-3
 momentjs:moment
 npm-bcrypt
 accounts-password
-#insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
-#autopublish@1.0.7             # Publish all data to the clients (for prototyping)
+insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
+autopublish@1.0.7             # Publish all data to the clients (for prototyping)
 matb33:collection-hooks
 gfk:notifications
 
